@@ -51,6 +51,20 @@ No incluye detener, deshabilitar o desinstalar el agente, ni cambiar el token, e
 
 ## Instalación
 
+### Con el paquete `.deb` (Ubuntu, Mint, Debian)
+
+Descargá `sentinelone-panel_<versión>_all.deb` desde [Releases](https://github.com/OperacionesMejoras/sentinelone-panel/releases) y:
+
+```bash
+sudo apt install ./sentinelone-panel_1.0.0_all.deb
+```
+
+Esto lo instala para todos los usuarios, en el menú (Sistema → Panel SentinelOne), y agrega el comando `sentinelone-panel`. Se desinstala con `sudo apt remove sentinelone-panel`.
+
+Para generar el `.deb` desde el código: `packaging/build-deb.sh`, que lo deja en `dist/`.
+
+### Solo para tu usuario, sin sudo
+
 ```bash
 git clone https://github.com/OperacionesMejoras/sentinelone-panel.git
 cd sentinelone-panel
